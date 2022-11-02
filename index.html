@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+<title>Responsive Website</title>
+</head>
+<body>
+
+<!-- Simulate a smartphone / tablet look -->
+<div class="mobile-container">
+
+<!-- Start header -->
+<header>
+<!-- Top Navigation Menu -->
+<nav class="topnav">
+  <a href="#home" class="active">Logo</a>
+  <ul id="myLinks">
+    <li><a href="#about-me">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact-me">Contact Me</a></li>
+  </ul>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</nav>
+</header>
+<!-- End header -->
+<!-- Start main -->
+<main>
+  <section id="landing">
+    <section id="landing-text">
+        <h1>I'm Jackie</h1>
+        <h2>Web developer</h2>
+        <a href="#contact-me" class="btn" id="landing-contact-btn">
+          Reach Out
+        </a>
+    </section>
+    <section id="landing-image"></section>
+  </section>
+
+  <article id="about-me">
+    <h3>About Me</h3>
+    <p>Hi! My name is Jackie and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to learn how to use <strong id="wp-skill" class="skills">WordPress</strong> - which turned out to be very exciting, leading me to also learn how to use <strong id="html-skill" class="skills">HTML</strong>, <strong id="css-skill" class="skills">CSS</strong> and <strong id="php-skill" class="skills">PHP</strong></p>
+
+    <p>Fast-forward to today, and I have had the privilege of working at an advertising agency, a start-up, a huge corporation, and a student-led design studio. My main focus these days is building accessible, inclusive products and digital experiences at Upstatement for a variety of clients.</p>
+
+    <p>I also recently launched a course that covers everything you need to build a WordPress Website </p>
+    <section class="image-grid">
+      <img src="https://source.unsplash.com/random/320x240?coding" alt="" title="image-1" class="grid-image">
+      <img src="https://source.unsplash.com/random/320x240?coding" alt="" title="image-2" class="grid-image">
+      <img src="https://source.unsplash.com/random/320x240?coding" alt="" title="image-3" class="grid-image" >
+    </section>
+  </article>
+
+  <article id="skills">
+    <h3>Skills</h3>
+    <p>This example demonstrates how a navigation menu on a mobile/smart phone could look like.</p>
+    <p>Click on the hamburger menu (three bars) in the top right corner, to toggle the menu.</p>
+    <p>Note that this example should'nt be used if you have a lot of links, as they will "break" the navbar when there's too many (especially on very small screens)</p>
+    <section class="image-grid">
+      <img src="img/wordpress-skill.jpg" alt="" title="image-1" class="grid-image">
+      <img src="img/html-skill.jpg" alt="" title="image-2" class="grid-image">
+      <img src="img/css-skill.jpg" alt="" title="image-3" class="grid-image">
+    </section>
+  </article>
+
+</main>
+<!-- End main -->
+
+<!--- Start footer -->
+<footer>
+  <section id="contact-me">
+    <h3>Get In Touch</h3>
+    <p>Email or call us to set up a consult</p>
+    <p id="mail-address">
+      <a href="mailto:conatct@acmephotos.test" id="send-mail">Send Email</a>
+    </p>
+    <p id="phone-number">
+      <a href="tel:+0016175555555" id="call-number">Call Us</a>
+    </p>
+    <!-- Scroll back to top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!--- End Scroll to back button -->
+  </section>
+</footer>
+<!--- End footer -->
+
+</div>
+<!--- End Simulate a smartphone  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
